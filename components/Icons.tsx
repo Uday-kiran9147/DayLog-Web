@@ -2,407 +2,413 @@ import React from "react";
 
 export type IconProps = React.SVGProps<SVGSVGElement>;
 
+/* Material Symbols Rounded: auto_stories / menu_book */
 export function BookOpenIcon(props: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      fill="currentColor"
       {...props}
     >
-      <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
-      <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+      <path d="M19 2H6c-1.2 0-2.16.85-2.39 2H3.5C2.67 4 2 4.67 2 5.5v14C2 20.33 2.67 21 3.5 21h15c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 17H4.5c-.28 0-.5-.22-.5-.5s.22-.5.5-.5H18V4h-6v6l-2-1.5L8 10V4H6c-.55 0-1 .45-1 1v12.2c.42-.13.88-.2 1.37-.2H18v2z" />
     </svg>
   );
 }
 
-export function HeartIcon(props: IconProps) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      {...props}
-    >
-      <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
-    </svg>
-  );
-}
-
-export function SmileIcon(props: IconProps) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      {...props}
-    >
-      <circle cx="12" cy="12" r="10" />
-      <path d="M8 14s1.5 2 4 2 4-2 4-2" />
-      <line x1="9" x2="9.01" y1="9" y2="9" />
-      <line x1="15" x2="15.01" y1="9" y2="9" />
-    </svg>
-  );
-}
-
-export function LayersIcon(props: IconProps) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      {...props}
-    >
-      <polygon points="12 2 2 7 12 12 22 7 12 2" />
-      <polyline points="2 17 12 22 22 17" />
-      <polyline points="2 12 12 17 22 12" />
-    </svg>
-  );
-}
-
-export function TimerIcon(props: IconProps) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      {...props}
-    >
-      <circle cx="12" cy="12" r="10" />
-      <polyline points="12 6 12 12 16 14" />
-    </svg>
-  );
-}
-
+/* Material Symbols Rounded: event / calendar_today */
 export function CalendarIcon(props: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      fill="currentColor"
       {...props}
     >
-      <path d="M8 2v4" />
-      <path d="M16 2v4" />
-      <rect width="18" height="18" x="3" y="4" rx="2" />
-      <path d="M3 10h18" />
+      <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z" />
     </svg>
   );
 }
 
+/* Material Symbols Rounded: timer */
+export function TimerIcon(props: IconProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      {...props}
+    >
+      <path d="M14 1h-4c-.55 0-1 .45-1 1s.45 1 1 1h4c.55 0 1-.45 1-1s-.45-1-1-1zm5.03 5.39l1.42-1.42c.39-.39.39-1.02 0-1.41a.996.996 0 0 0-1.41 0l-1.42 1.42A8.962 8.962 0 0 0 12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-2.12-.74-4.07-1.97-5.61zM12 19c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7zm1-11h-2v5c0 .55.45 1 1 1s1-.45 1-1V8z" />
+    </svg>
+  );
+}
+
+/* Material Symbols Rounded: auto_awesome / sparkles */
 export function SparklesIcon(props: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      fill="currentColor"
       {...props}
     >
-      <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" />
-      <path d="M20 3v4" />
-      <path d="M22 5h-4" />
-      <path d="M4 17v2" />
-      <path d="M5 18H3" />
+      <path d="M19 9l1.25-2.75L23 5l-2.75-1.25L19 1l-1.25 2.75L15 5l2.75 1.25L19 9zm-7.5.5L9 4 6.5 9.5 1 12l5.5 2.5L9 20l2.5-5.5L17 12l-5.5-2.5zM19 15l-1.25 2.75L15 19l2.75 1.25L19 23l1.25-2.75L23 19l-2.75-1.25L19 15z" />
     </svg>
   );
 }
 
+/* Material Symbols Rounded: verified_user / shield */
 export function ShieldCheckIcon(props: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      fill="currentColor"
       {...props}
     >
-      <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
-      <path d="m9 12 2 2 4-4" />
+      <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
     </svg>
   );
 }
 
-export function TrendingUpIcon(props: IconProps) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      {...props}
-    >
-      <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
-      <polyline points="16 7 22 7 22 13" />
-    </svg>
-  );
-}
-
+/* Material Symbols Rounded: bar_chart / leaderboard */
 export function BarChartIcon(props: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      fill="currentColor"
       {...props}
     >
-      <line x1="12" x2="12" y1="20" y2="10" />
-      <line x1="18" x2="18" y1="20" y2="4" />
-      <line x1="6" x2="6" y1="20" y2="16" />
+      <path d="M5 9.2h3V19H5V9.2zM10.6 5h2.8v14h-2.8V5zm5.6 8H19v6h-2.8v-6z" />
     </svg>
   );
 }
 
+/* Material Symbols Rounded: database / storage */
 export function DatabaseIcon(props: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      fill="currentColor"
       {...props}
     >
-      <ellipse cx="12" cy="5" rx="9" ry="3" />
-      <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
-      <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3" />
+      <path d="M12 2C6.48 2 2 3.34 2 5v14c0 1.66 4.48 3 10 3s10-1.34 10-3V5c0-1.66-4.48-3-10-3zm0 2.5c4.76 0 7.8 1.04 8 1.45-.2.41-3.24 1.45-8 1.45S4.2 6.36 4 5.95c.2-.41 3.24-1.45 8-1.45zM4 9.12C5.39 9.94 8.28 10.5 12 10.5s6.61-.56 8-1.38V11c0 .41-3.04 1.45-8 1.45S4 11.41 4 11V9.12zm0 4.62c1.39.82 4.28 1.38 8 1.38s6.61-.56 8-1.38V16c0 .41-3.04 1.45-8 1.45S4 16.41 4 16v-2.26zm0 4.62c1.39.82 4.28 1.38 8 1.38s6.61-.56 8-1.38V21c0 .41-3.04 1.45-8 1.45S4 21.41 4 21v-2.64z" />
     </svg>
   );
 }
 
-export function LockIcon(props: IconProps) {
+/* Material Symbols Rounded: notifications / bell */
+export function BellIcon(props: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      fill="currentColor"
       {...props}
     >
-      <rect width="18" height="11" x="3" y="11" rx="2" ry="2" />
-      <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+      <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-1.7 1.7A1 1 0 0 0 5 19h14a1 1 0 0 0 .7-1.7L18 16z" />
     </svg>
   );
 }
 
+/* Material Symbols Rounded: palette / colors */
+export function PaletteIcon(props: IconProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      {...props}
+    >
+      <path d="M12 3c-4.97 0-9 4.03-9 9 0 4.42 3.58 8 8 8 .55 0 1-.45 1-1 0-.28-.11-.53-.29-.71-.3-.3-.49-.7-.49-1.16 0-.88.72-1.6 1.6-1.6h1.9c3.04 0 5.5-2.46 5.5-5.5 0-4.01-3.7-7.03-8.22-7.03zM6.5 12c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12zm3-4C8.67 8 8 7.33 8 6.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 9 17.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" />
+    </svg>
+  );
+}
+
+/* Material Symbols Rounded: terminal */
+export function TerminalIcon(props: IconProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      {...props}
+    >
+      <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-1 14H5c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h14c.55 0 1 .45 1 1v10c0 .55-.45 1-1 1zm-7-2h5c.55 0 1-.45 1-1s-.45-1-1-1h-5c-.55 0-1 .45-1 1s.45 1 1 1zm-4.29-4.71l-2.59-2.59a.996.996 0 0 1 0-1.41c.39-.39 1.02-.39 1.41 0l3.3 3.29c.39.39.39 1.02 0 1.41l-3.3 3.3a.996.996 0 1 1-1.41-1.41l2.59-2.59z" />
+    </svg>
+  );
+}
+
+/* Material Symbols Rounded: school / student */
+export function GraduationCapIcon(props: IconProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      {...props}
+    >
+      <path d="M12 3L1 9l11 6 9-4.91V17c0 .55.45 1 1 1s1-.45 1-1v-7.64L12 3zm0 15.5c-3.72 0-6.85-2.02-8.35-4.97L12 17.65l8.35-4.12c-1.5 2.95-4.63 4.97-8.35 4.97z" />
+    </svg>
+  );
+}
+
+/* Material Symbols Rounded: draw / edit_note / brush */
+export function PenToolIcon(props: IconProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      {...props}
+    >
+      <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z" />
+    </svg>
+  );
+}
+
+/* Material Symbols Rounded: rocket_launch */
+export function RocketIcon(props: IconProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      {...props}
+    >
+      <path d="M13.13 2.51c-2.39.81-4.47 2.45-5.91 4.64L5.64 8.73a1.75 1.75 0 0 0 0 2.47l1.06 1.06-2.12 2.12c-.39.39-.39 1.02 0 1.41l1.41 1.41c.39.39 1.02.39 1.41 0l2.12-2.12 1.06 1.06c.68.68 1.79.68 2.47 0l1.58-1.58c2.19-1.44 3.83-3.52 4.64-5.91.4-1.18-.73-2.31-1.91-1.91-1.2.4-2.47.6-3.77.6-3.87 0-7-3.13-7-7 0-1.3.2-2.57.6-3.77.4-1.18-.73-2.31-1.91-1.91zM9.5 12c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" />
+    </svg>
+  );
+}
+
+/* Material Symbols Rounded: check */
 export function CheckIcon(props: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2.5}
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      fill="currentColor"
       {...props}
     >
-      <polyline points="20 6 9 17 4 12" />
+      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
     </svg>
   );
 }
 
+/* Material Symbols Rounded: expand_more / chevron_down */
 export function ChevronDownIcon(props: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      fill="currentColor"
       {...props}
     >
-      <path d="m6 9 6 6 6-6" />
+      <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z" />
     </svg>
   );
 }
 
+/* Material Symbols Rounded: star / grade */
 export function StarIcon(props: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       fill="currentColor"
-      stroke="currentColor"
-      strokeWidth={1}
       {...props}
     >
-      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z" />
     </svg>
   );
 }
 
+/* Material Symbols Rounded: smartphone */
 export function SmartphoneIcon(props: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      fill="currentColor"
       {...props}
     >
-      <rect width="14" height="20" x="5" y="2" rx="2" ry="2" />
-      <path d="M12 18h.01" />
+      <path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14zm-5 1c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z" />
     </svg>
   );
 }
 
-export function ZapIcon(props: IconProps) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      {...props}
-    >
-      <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
-    </svg>
-  );
-}
-
-export function ArrowRightIcon(props: IconProps) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      {...props}
-    >
-      <path d="M5 12h14" />
-      <path d="m12 5 7 7-7 7" />
-    </svg>
-  );
-}
-
-export function MailIcon(props: IconProps) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      {...props}
-    >
-      <rect width="20" height="16" x="2" y="4" rx="2" />
-      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-    </svg>
-  );
-}
-
+/* Material Symbols Rounded: menu */
 export function MenuIcon(props: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      fill="currentColor"
       {...props}
     >
-      <line x1="4" x2="20" y1="12" y2="12" />
-      <line x1="4" x2="20" y1="6" y2="6" />
-      <line x1="4" x2="20" y1="18" y2="18" />
+      <path d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1z" />
     </svg>
   );
 }
 
+/* Material Symbols Rounded: close */
 export function CloseIcon(props: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      fill="currentColor"
       {...props}
     >
-      <line x1="18" x2="6" y1="6" y2="18" />
-      <line x1="6" x2="18" y1="6" y2="18" />
+      <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
     </svg>
   );
 }
 
+/* Material Symbols Rounded: mail */
+export function MailIcon(props: IconProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      {...props}
+    >
+      <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+    </svg>
+  );
+}
+
+/* Material Symbols Rounded: arrow_forward */
+export function ArrowRightIcon(props: IconProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      {...props}
+    >
+      <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z" />
+    </svg>
+  );
+}
+
+/* Material Symbols Rounded: favorite / heart */
+export function HeartIcon(props: IconProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      {...props}
+    >
+      <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+    </svg>
+  );
+}
+
+/* Material Symbols Rounded: label / tag */
+export function TagIcon(props: IconProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      {...props}
+    >
+      <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84l3.96-5.58c.25-.35.25-.81 0-1.16l-3.96-5.58z" />
+    </svg>
+  );
+}
+
+/* Material Symbols Rounded: code */
+export function CodeIcon(props: IconProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      {...props}
+    >
+      <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z" />
+    </svg>
+  );
+}
+
+/* Material Symbols Rounded: lock */
+export function LockIcon(props: IconProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      {...props}
+    >
+      <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z" />
+    </svg>
+  );
+}
+
+/* Material Symbols Rounded: trending_up */
+export function TrendingUpIcon(props: IconProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      {...props}
+    >
+      <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6h-6z" />
+    </svg>
+  );
+}
+
+/* Material Symbols Rounded: sentiment_satisfied / mood */
+export function SmileIcon(props: IconProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      {...props}
+    >
+      <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z" />
+    </svg>
+  );
+}
+
+/* Material Symbols Rounded: layers */
+export function LayersIcon(props: IconProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      {...props}
+    >
+      <path d="M11.99 18.54l-7.37-5.73L3 14.07l9 7 9-7-1.63-1.27-7.38 5.74zM12 16l7.36-5.73L21 9l-9-7-9 7 1.63 1.27L12 16z" />
+    </svg>
+  );
+}
+
+/* Material Symbols Rounded: open_in_new / external_link */
 export function ExternalLinkIcon(props: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      fill="currentColor"
       {...props}
     >
-      <path d="M15 3h6v6" />
-      <path d="M10 14 21 3" />
-      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+      <path d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" />
     </svg>
   );
 }
 
+/* Official Apple Store SVG */
 export function AppleStoreIcon(props: IconProps) {
   return (
     <svg
@@ -416,6 +422,7 @@ export function AppleStoreIcon(props: IconProps) {
   );
 }
 
+/* Official Google Play Store SVG */
 export function GooglePlayIcon(props: IconProps) {
   return (
     <svg
@@ -425,157 +432,6 @@ export function GooglePlayIcon(props: IconProps) {
       {...props}
     >
       <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z" />
-    </svg>
-  );
-}
-
-export function TagIcon(props: IconProps) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      {...props}
-    >
-      <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" />
-      <circle cx="7.5" cy="7.5" r=".5" fill="currentColor" />
-    </svg>
-  );
-}
-
-export function BellIcon(props: IconProps) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      {...props}
-    >
-      <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
-      <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
-    </svg>
-  );
-}
-
-export function CodeIcon(props: IconProps) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      {...props}
-    >
-      <polyline points="16 18 22 12 16 6" />
-      <polyline points="8 6 2 12 8 18" />
-    </svg>
-  );
-}
-
-export function TerminalIcon(props: IconProps) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      {...props}
-    >
-      <polyline points="4 17 10 11 4 5" />
-      <line x1="12" x2="20" y1="19" y2="19" />
-    </svg>
-  );
-}
-
-export function PaletteIcon(props: IconProps) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      {...props}
-    >
-      <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
-      <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
-      <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
-      <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
-      <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.563-2.512 5.563-5.563C22 6.5 17.5 2 12 2z" />
-    </svg>
-  );
-}
-
-export function GraduationCapIcon(props: IconProps) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      {...props}
-    >
-      <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
-      <path d="M6 12v5c3 3 9 3 12 0v-5" />
-    </svg>
-  );
-}
-
-export function PenToolIcon(props: IconProps) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      {...props}
-    >
-      <path d="m12 19 7-7 3 3-7 7-3-3z" />
-      <path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
-      <path d="m2 2 7.586 7.586" />
-      <circle cx="11" cy="11" r="2" />
-    </svg>
-  );
-}
-
-export function RocketIcon(props: IconProps) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      {...props}
-    >
-      <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
-      <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
-      <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
-      <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
     </svg>
   );
 }

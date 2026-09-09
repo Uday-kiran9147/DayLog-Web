@@ -34,19 +34,19 @@ export function FaqSection() {
   ];
 
   return (
-    <section id="faq" className="py-20 md:py-28 relative">
+    <section id="faq" className="py-20 md:py-28 relative bg-[#141210]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
         <div className="text-center mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#c85a32]/10 border border-[#c85a32]/30 text-[#c85a32] text-xs font-bold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#d97736]/15 border border-[#d97736]/30 text-[#d97736] text-xs font-bold uppercase tracking-wider">
             <SparklesIcon className="w-3.5 h-3.5" />
             <span>Got Questions?</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#231f1c] dark:text-[#f6f0e6] tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
             Frequently Asked Questions
           </h2>
-          <p className="text-slate-600 dark:text-slate-400 text-base">
+          <p className="text-slate-300 text-base">
             Everything you need to know about DayLog, focus sessions, and offline security.
           </p>
         </div>
@@ -58,25 +58,25 @@ export function FaqSection() {
             return (
               <div
                 key={idx}
-                className="rounded-3xl border border-[#e6dcce] dark:border-[#332d26] bg-white dark:bg-[#1e1b18] hover:border-[#c85a32]/40 transition-colors overflow-hidden shadow-sm"
+                className="rounded-3xl border border-[#332d26] bg-[#1e1b18] hover:border-[#c85a32]/50 transition-colors overflow-hidden shadow-md"
               >
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : idx)}
                   className="w-full text-left px-6 py-5 flex items-center justify-between gap-4 focus:outline-none"
                 >
-                  <span className="text-base font-bold text-[#231f1c] dark:text-[#f6f0e6]">
+                  <span className="text-base font-bold text-white">
                     {faq.q}
                   </span>
                   <div
-                    className={`w-7 h-7 rounded-full bg-[#f6f0e6] dark:bg-[#28231e] flex items-center justify-center text-slate-500 transition-transform duration-200 shrink-0 ${
-                      isOpen ? "rotate-180 text-[#c85a32]" : ""
+                    className={`w-7 h-7 rounded-full bg-[#28231e] flex items-center justify-center text-slate-400 transition-transform duration-200 shrink-0 ${
+                      isOpen ? "rotate-180 text-[#d97736]" : ""
                     }`}
                   >
                     <ChevronDownIcon className="w-4 h-4" />
                   </div>
                 </button>
                 {isOpen && (
-                  <div className="px-6 pb-5 pt-1 text-sm text-slate-600 dark:text-slate-300 leading-relaxed border-t border-[#f0e8dc] dark:border-[#28231e]">
+                  <div className="px-6 pb-5 pt-1 text-sm text-slate-300 leading-relaxed border-t border-[#2d2720]">
                     {faq.a}
                   </div>
                 )}

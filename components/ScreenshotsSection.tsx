@@ -31,19 +31,19 @@ export function ScreenshotsSection() {
   ];
 
   return (
-    <section id="screenshots" className="py-20 md:py-28 bg-[#f5efe6]/50 dark:bg-[#181512] border-y border-[#e6dcce] dark:border-[#2d2720]">
+    <section id="screenshots" className="py-20 md:py-28 bg-[#181512] border-y border-[#2d2720]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#c85a32]/10 border border-[#c85a32]/30 text-[#c85a32] text-xs font-bold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#d97736]/15 border border-[#d97736]/30 text-[#d97736] text-xs font-bold uppercase tracking-wider">
             <SparklesIcon className="w-3.5 h-3.5" />
             <span>Visual Tour</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#231f1c] dark:text-[#f6f0e6] tracking-tight">
-            Designed for Clarity & Flow
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+            Designed for Clarity &amp; Flow
           </h2>
-          <p className="text-slate-600 dark:text-slate-400 text-base sm:text-lg">
+          <p className="text-slate-300 text-base sm:text-lg">
             Warm terracotta accents, tactile Material 3 cards, and zero friction.
           </p>
         </div>
@@ -53,10 +53,10 @@ export function ScreenshotsSection() {
           {screenshots.map((s, idx) => (
             <div
               key={idx}
-              className="flex flex-col items-center bg-white dark:bg-[#1e1b18] border border-[#e6dcce] dark:border-[#332d26] rounded-3xl p-6 shadow-md hover:shadow-xl transition-all group"
+              className="flex flex-col items-center bg-[#1e1b18] border border-[#332d26] rounded-3xl p-6 shadow-md hover:shadow-xl transition-all group hover:border-[#c85a32]/40"
             >
               {/* Natural Screenshot Image (Without artificial CSS shell) */}
-              <div className="relative w-full aspect-[430/890] max-w-[280px] mb-6 drop-shadow-xl group-hover:scale-[1.03] transition-transform duration-300">
+              <div className="relative w-full aspect-[430/890] max-w-[280px] mb-6 drop-shadow-2xl group-hover:scale-[1.03] transition-transform duration-300">
                 <Image
                   src={s.src}
                   alt={s.alt}
@@ -68,13 +68,13 @@ export function ScreenshotsSection() {
 
               {/* Text Meta */}
               <div className="text-center space-y-2 w-full">
-                <span className="inline-block px-2.5 py-1 rounded-full bg-[#c85a32]/10 text-[#c85a32] text-xs font-bold font-mono">
+                <span className="inline-block px-2.5 py-1 rounded-full bg-[#d97736]/15 text-[#d97736] text-xs font-bold font-mono">
                   {s.tag}
                 </span>
-                <h3 className="text-lg font-bold text-[#231f1c] dark:text-[#f6f0e6]">
+                <h3 className="text-lg font-bold text-white">
                   {s.title}
                 </h3>
-                <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                <p className="text-xs text-slate-300 leading-relaxed">
                   {s.description}
                 </p>
               </div>
