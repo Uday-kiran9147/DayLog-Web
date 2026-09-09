@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DayLog — Minimalist Focus Timer & Daily Reflection Journal
 
-## Getting Started
+A Next.js website for the **DayLog** mobile app (iOS & Android) with the warm **Terracotta & Sage Green** Material 3 aesthetic, showcasing real app screens and hosting the Google AdMob `app-ads.txt` file for developer authorization.
 
-First, run the development server:
+---
 
+## 🎨 Design & Aesthetic
+- **Warm Terracotta & Sage Green Theme**: Crafted with Material 3 styling tokens, tactile card elevation, and smooth dark/light mode support.
+- **Real App Screenshots**: Displays actual screenshots of the Reflection Journal, Work & Domain Tracking, and Manage Categories bottom sheet.
+- **The 4-Question Reflection Method**: Showcases the daily prompts and yesterday's priority integration.
+
+---
+
+## 🚀 Getting Started
+
+### 1. Run Development Server
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### 2. Production Build
+```bash
+npm run build
+npm run start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📱 Google AdMob `app-ads.txt` Setup
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Google AdMob requires an `app-ads.txt` file hosted on your developer website root domain to verify app ownership and prevent ad fraud.
 
-## Learn More
+### Step 1: Update Your Publisher ID
+Open `public/app-ads.txt` and replace `pub-XXXXXXXXXXXXXXXX` with your actual AdMob Publisher ID:
+```
+google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+```
+> **Where to find your Publisher ID**:
+> 1. Sign in to your [Google AdMob Account](https://admob.google.com).
+> 2. Go to **Settings** > **Account Information** > **Publisher ID** (format: `pub-1234567890123456`).
 
-To learn more about Next.js, take a look at the following resources:
+### Step 2: Deploy to Your Domain
+Deploy this Next.js project to your host (Vercel, Netlify, Cloudflare Pages, VPS, etc.) and connect your custom domain (e.g., `https://daylog.app`).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Step 3: Link Your Website in App Stores
+1. **Google Play Console**:
+   - Go to **Store presence** > **Store settings**.
+   - Under **Website**, enter your domain (e.g. `https://daylog.app`).
+2. **Apple App Store Connect**:
+   - Go to your App > **App Information**.
+   - Set **Marketing URL** or **Support URL** to your domain.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Step 4: Verify in AdMob
+1. Go to **AdMob Console** > **Apps** > **app-ads.txt**.
+2. AdMob will crawl `https://yourdomain.com/app-ads.txt` automatically within 24 hours.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📂 Project Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+daylog_web/
+├── app/
+│   ├── app-ads.txt/
+│   │   └── route.ts             # Route handler ensuring text/plain MIME type
+│   ├── privacy/
+│   │   └── page.tsx             # Privacy Policy (100% offline DB, AdMob, permissions)
+│   ├── terms/
+│   │   └── page.tsx             # Terms of Service
+│   ├── support/
+│   │   └── page.tsx             # Help desk, FAQ, JSON backup guide, contact form
+│   ├── layout.tsx               # SEO metadata, fonts, Navbar & Footer
+│   ├── page.tsx                 # Main Landing Page
+│   └── globals.css              # Warm terracotta & sage Material 3 theme
+├── components/
+│   ├── Navbar.tsx               # Header with brand badge and store links
+│   ├── Footer.tsx               # Footer with legal and app-ads.txt links
+│   ├── HeroSection.tsx          # Hero header with store badges
+│   ├── HeroPhoneMockup.tsx      # Phone bezel with screenshot switcher
+│   ├── TargetAudienceSection.tsx# Built for developers, students, creators
+│   ├── FourQuestionsSection.tsx # The 4-question daily reflection breakdown
+│   ├── FeatureSection.tsx       # 7 core capabilities grid
+│   ├── ScreenshotsSection.tsx   # Real screenshot gallery tour
+│   ├── AdMobInstructionCard.tsx # Developer guide for app-ads.txt
+│   ├── FaqSection.tsx           # Collapsible FAQ accordion
+│   ├── CtaSection.tsx           # Download CTA banner
+│   ├── DownloadButtons.tsx      # App Store & Google Play buttons
+│   └── Icons.tsx                # Zero-dependency SVG icons
+└── public/
+    ├── app-ads.txt              # Google AdMob verification file
+    ├── robots.txt               # Crawler instructions (allows AdsBot-Google)
+    └── screenshots/             # Real DayLog app screenshots
+        ├── reflection-screen.png
+        ├── categories-screen.png
+        └── manage-categories.png
+```

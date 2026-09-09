@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Allow: /app-ads.txt
+
+# Google AdMob Crawler
+User-agent: AdsBot-Google
+Allow: /
+Allow: /app-ads.txt
+
+User-agent: Googlebot
+Allow: /
+Allow: /app-ads.txt
